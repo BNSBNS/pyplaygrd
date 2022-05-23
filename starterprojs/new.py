@@ -106,3 +106,35 @@ def myFun1(**kwargs):
         print("{} == {}".format(k, v))
 
 myFun1(arg1 = "Geeks", arg2 = "for", arg3 = "Geeks")
+
+# Python code to illustrate cube of a number
+# showing difference between def() and lambda().
+def cube(y):
+    return y*y*y
+ 
+lambda_cube = lambda y: y*y*y
+ 
+# using the normally
+# defined function
+print(cube(5))
+ 
+# using the lambda function
+print(lambda_cube(5))
+
+print('################# breaker #################')
+
+tables = [lambda x=x: x*10 for x in range(1, 11)]
+ 
+for table in tables:
+    print(table())
+
+print('################# breaker #################')
+
+
+# Python code to illustrate
+# filter() with lambda()
+li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+ 
+final_list = list(filter(lambda x: (x%2 != 0) , li))
+print(final_list)
+
