@@ -80,11 +80,26 @@
 #     print(count)
 
 
-def printPicnic(itemsDict, leftWidth, rightWidth):
-    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
-    for k, v in itemsDict.items():
-        print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
+# def printPicnic(itemsDict, leftWidth, rightWidth):
+#     print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
+#     for k, v in itemsDict.items():
+#         print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
 
-picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
-printPicnic(picnicItems, 12, 5)
-printPicnic(picnicItems, 20, 6)
+# picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
+# printPicnic(picnicItems, 12, 5)
+# printPicnic(picnicItems, 20, 6)
+
+# import re
+# pnr = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+# a = pnr.search('my num is 112-333-4242')
+# print('num = '+ a.group())
+
+
+import logging
+logging.basicConfig(level=logging.DEBUG,format=' %(asctime)s -%(levelname)s - %(message)s')
+
+logging.debug('some debug details')
+logging.info('logging working')
+logging.warning('warning')
+logging.error('error')
+logging.critical('critical')
