@@ -11,7 +11,7 @@ app = Flask(__name__)
 api = Api(app)
 
 # specify location of pickled model and load it
-file_loc_name = '../models/sg_hdb_lm_v1.pkl'
+file_loc_name = '../models/sg_hdb_1m_v1.pkl'
 sg_hdb_loaded_model = pickle.load(open(file_loc_name, 'rb'))
 
 # argument parsing
@@ -32,6 +32,7 @@ class PredictResalePrice(Resource):
         # create JSON object
         output = {'prediction': user_resale_price[0]}
         #output = user_resale_price
+
         
         return output
 
