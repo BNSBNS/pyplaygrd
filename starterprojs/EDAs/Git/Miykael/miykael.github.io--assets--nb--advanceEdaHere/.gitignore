@@ -1,0 +1,11 @@
+.DS_store
+.bundle
+.ipynb_checkpoints
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+Gemfile.lock
+_site
+vendor
